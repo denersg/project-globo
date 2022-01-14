@@ -1,0 +1,96 @@
+/*************** CONFIGURAÇÕES GLOBAIS ***************/
+body{
+    font-family: 'Encode Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*************** TOPO DA PÁGINA ***************/
+.top{
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top img{
+    height: 36px;
+}
+
+.horizontal-line{
+    background-color: #F5F6F7;
+    height: 1px;
+}
+
+.links{
+    width: 1250px;
+    height: 44px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /*Orientação: vertical | horizontal
+     *O 'margin: 0 auto' serve para deixar o conteúdo centralizado*/
+    margin: 0 auto;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+}
+
+.g1{
+    color: #C3170C;
+}
+
+.globo{
+    color: #1E4B9B;
+}
+
+.valor{
+    color: #006766;
+}
+
+.ge{
+    color: #07AA47;
+}
+
+.cartola{
+    color: #E3662B;
+}
+
+.globoplay{
+    color: #FB0735;
+}
+
+.dropz{
+    color: #FF75BB;
+}
+
+.gshow{
+    color: #EC7D00;
+}
+
+.quem{
+    color: #323333;
+}
+
+.receitas{
+    color: #A81D83;
+}
+
+/*************** CONTEÚDO DA PÁGINA ***************/
+.content{
+    /* background-color: dodgerblue; */
+    width: 1250px;
+
+    display: flex;
+
+    margin: 0 auto;
+    margin-top: 35px;
+}
