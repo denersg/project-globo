@@ -25,7 +25,7 @@ a{
     height: 1px;
 }
 
-.links{
+.top-menu{
     width: 1250px;
     height: 44px;
 
@@ -84,13 +84,126 @@ a{
     color: #A81D83;
 }
 
-/*************** CONTEÚDO DA PÁGINA ***************/
+/****************************** CONTEÚDO DA PÁGINA ******************************/
 .content{
-    /* background-color: dodgerblue; */
     width: 1250px;
 
     display: flex;
 
     margin: 0 auto;
     margin-top: 35px;
+}
+
+.main-headline{
+    margin-bottom: 30px;
+    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 67px;
+    letter-spacing: -0.01em;
+    color: #C4160C;
+}
+
+.main-news p{
+    margin-bottom: 7px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    color: #303134;
+}
+
+.main-news .horizontal-line{
+    margin: 25px 0;
+}
+
+.general-news{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reports img{
+    width: 193px;
+    border-radius: 12px;
+}
+
+.reports .headline{
+    margin-top: 11px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+
+    color: #C4170C;
+}
+
+.reports .title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.045em;
+
+    color: #2F3134;
+}
+
+.reports .info{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.048em;
+
+    color: #2F3134;
+}
+
+.reports .title{
+    width: 192px;
+}
+
+.reports .info{
+    width: 174px;
+}
+
+.vertical-line{
+    width: 1px;
+    height: 845px;
+
+    /* A linha vertical vai separar igualmente as seções. */
+    margin: 0 36px;
+    margin-bottom: 73px;
+
+    background-color: #EBEDEF;
+}
+
+.sport-news, .entertainment{
+    height: 890px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sport-news img, .entertainment img{
+    width: 240px;
+}
+
+.sport-news .headline{
+    color: #16AE54;
+}
+
+.sport-news .title, .entertainment .title{
+    width: 240px;
+    margin: 6px 0;
+}
+
+.sport-news .info, .entertainment .info{
+    width: 217px;
+    margin-top: 10px;
+}
+
+.entertainment .headline{
+    color: #EC8006;
 }

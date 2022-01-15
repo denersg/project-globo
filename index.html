@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- <h1>GLOBO</h1> -->
     <div class="top">
 
         <img src="./img/logo.png" alt="logotipo" class="logo">
@@ -24,7 +23,7 @@
 
     <div class="horizontal-line"></div>
 
-    <div class="links">
+    <div class="top-menu">
         <a href="https://globo.com" class="g1">g1</a>
         <a href="https://globo.com" class="globo">o globo</a>
         <a href="https://globo.com" class="valor">valor</a>
@@ -40,11 +39,131 @@
     <div class="horizontal-line"></div>
 
     <div class="content">
-        <h1>a</h1>
-        <h2>b</h2>
-        <h2>c</h2>
-    </div>
+        <div class="main-news">
+            <!-- Como existem muitos links e muito texto para envolver com a tag 'a', é preferível envolver tudo com ela.
+            Assim, resolvemos o problema de acabar removendo acidentalmete a estilização já feita no CSS, o que
+            só conseguiríamos resolver inserindo classes em cada um dos textos. -->
+            <a href="https://globo.com">
+                <h1 class="main-headline">Vacinados entrarão nos EUA sem quarentena a partir de 8 de novembro</h1>
+                <p>Ministros 'lavam as mãos' sobre Bolsonaro não se vacinar, relata blog</p>
+                <p>Bandeiras em frente ao Congresso lembram 600 mil brasileiros mortos</p>
+            </a>
 
-    
+            <div class="horizontal-line"></div>
+
+            <div class="general-news">
+                <a href="https://globo.com">
+                    <div class="reports">
+                        <img src="img/alem-do-presidente.jpeg" alt="presidente">
+                        <p class="headline">Além do presidente</p>
+                        <p class="title">CPI deve pedir indiciamento de filhos de Bolsonaro</p>
+                        <p class="info">A evangélicos, Bolsonaro diz 'chorar sozinho em casa'</p>
+                    </div>
+                </a>
+                <a href="https://globo.com">
+                    <div class="reports">
+                        <img src="img/crimes-na-fronteira.jpeg" alt="fronteira">
+                        <p class="headline">Crimes na fronteira</p>
+                        <p class="title">Triângulo amoroso vira chave em linha de investigação</p>
+                        <p class="info">1ª de 7 mortes entre Brasil e Paraguai faz 1 semana</p>
+                    </div>
+                </a>
+                <a href="https://globo.com">
+                    <div class="reports">
+                        <img src="img/reino-unido.jpeg" alt="internacional">
+                        <p class="headline">Reino Unido</p>
+                        <p class="title">Parlamentar inglês é esfaqueado e morto em igreja</p>
+                        <p class="info">Homem de 25 anos foi preso no local, diz polícia</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="horizontal-line"></div>
+
+            <div class="general-news">
+                <a href="https://globo.com">
+                    <div class="reports">
+                        <p class="headline">Sabatina de Mendonça</p>
+                        <p class="title">PGR é consultada sobre investigação contra Alcolumbre</p>
+                        <p class="info">Aliados dizem que situação de Alcolumbre 'está feia'</p>
+                    </div>
+                </a>
+                <a href="https://globo.com">
+                    <div class="reports">
+                        <p class="headline">Negócio de R$ 5,2 bi</p>
+                        <p class="title">Pão de Açúcar vende 71 pontos do Extra para o Assaí</p>
+                        <p class="info">Lembre fusões e aquisições bilionárias recentes no país</p>
+                    </div>
+                </a>
+                <a href="https://globo.com">
+                    <div class="reports">
+                        <p class="headline">Elo com caminhoneiros</p>
+                        <p class="title">Podcast: ministro liga empresários a atos de 7/9; ouça</p>
+                        <p class="info">Neto de Jango critica veto de Bolsonaro a tributo</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- ==================================================================================== -->
+        
+        <div class="vertical-line"></div>
+
+        <div class="sport-news">
+            <div class="reports">
+                <a href="https://globo.com">
+                    <img src="img/espiao-estatistico.jpeg" alt="espiao-estatistico">
+                    <p class="headline">Espião estatístico</p>
+                    <p class="title">Classificação do returno tem Palmeiras em último; veja as posições</p>
+                    <p class="info">Crespo almoça com diretoria e deve se despedir no CT</p>
+                </a>
+            </div>
+            <div class="reports">
+                <a href="https://globo.com">
+                    <img src="img/greve-segue-na-raposa.jpeg" alt="greve-raposa">
+                    <p class="headline">Greve segue na Raposa</p>
+                    <p class="title">Cruzeiro não viabiliza recurso para quitar atrasados</p>
+                </a>
+            </div>
+            <div class="reports">
+                <a href="https://globo.com">
+                    <img src="img/campeonato-frances.jpeg" alt="campeonato-frances">
+                    <p class="headline">Campeonato francês</p>
+                    <p class="title">Desfalcado, PSG recebe o Angers, 4º colocado</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- ==================================================================================== -->
+
+        <div class="vertical-line"></div>
+
+        <div class="entertainment">
+            <div class="reports">
+                <a href="https://globo.com"></a>
+                    <img src="img/ferias-e-jh.jpeg" alt="ferias-e-jh">
+                    <p class="headline">Férias e JH</p>
+                    <p class="title">César Tralli se emociona na despedida do SP1</p>
+                </a>
+            </div>
+            <div class="reports">
+                <a href="https://globo.com">
+                    <img src="img/verdades-secretas-2.jpeg" alt="verdades-secretas">
+                    <p class="headline">Verdades Sceretas 2</p>
+                    <p class="title">Angel cruza a passarela poderosa; reveja desfiles</p>
+                    <p class="info">Blanche terá dois relacionamentos</p>
+                    <p class="info">Gabriel viverá sadomasoquista</p>
+                </a>
+            </div>
+            <div class="reports">
+                <a href="https://globo.com">
+                    <img src="img/nos-tempos-do-imperador.jpeg" alt="tempos-imperador">
+                    <p class="headline">Nos Tempos do Imperador</p>
+                    <p class="title">Lota vai cair em golpe</p>
+                    <p class="info">Teresa toma decisão radical</p>
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
