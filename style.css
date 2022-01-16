@@ -26,7 +26,7 @@ a{
 }
 
 .top-menu{
-    width: 1250px;
+    width: 93%;
     height: 44px;
 
     display: flex;
@@ -84,9 +84,13 @@ a{
     color: #A81D83;
 }
 
+.tech{
+    color: rgb(100, 100, 100);
+}
+
 /****************************** CONTEÚDO DA PÁGINA ******************************/
 .content{
-    width: 1250px;
+    width: 93%;
 
     display: flex;
 
@@ -181,9 +185,9 @@ a{
 }
 
 .sport-news, .entertainment{
-    height: 890px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .sport-news img, .entertainment img{
@@ -206,4 +210,159 @@ a{
 
 .entertainment .headline{
     color: #EC8006;
+}
+
+/****************************** RESPONSIVIDADE ******************************/
+
+@media(max-width: 5000px){
+    .tech, .videos, .logo-mobile{
+        display: none;
+    }
+}
+
+@media(max-width: 1300px){
+    .main-news .reports, .sport-news .reports, .entertainment .reports{
+        width: 100%;
+    }
+
+    .general-news .reports img,
+    .general-news .reports .headline,
+    .general-news .reports .title{
+        width: 160px;
+    }
+}
+
+@media(max-width: 1100px){
+    .content{
+        flex-direction: column;
+    }
+
+    .general-news .reports img,
+    .general-news .reports .headline,
+    .general-news .reports .title,
+    .sport-news .reports img,
+    .sport-news .reports .headline,
+    .sport-news .reports .title,
+    .entertainment .reports img,
+    .entertainment .reports .headline,
+    .entertainment .reports .title{
+        width: 100%;
+    }
+
+    .general-news, .sport-news, .entertainment{
+        flex-direction: column;
+    }
+    
+    .vertical-line{
+        display: none;
+    }
+
+    .horizontal-line-sports, .horizontal-line-entertainment{
+        width: 100%;
+        height: 1px;
+        margin: 20px 0;
+        background-color: #F5F6F7;
+    }
+
+    .reports{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 690px){
+    .valor, .cartola, .dropz, .quem, .receitas{
+        display: none;
+    }
+
+    .main-headline{
+        font-size: 36px;
+        line-height: 42px;
+    }
+}
+
+@media (max-width: 375px){
+    .globo, .globoplay, .logo, .headline{
+        display: none;
+    }
+
+    .tech, .videos{
+        display: flex;
+    }
+
+    .logo-mobile{
+        width: 175px;
+        display: flex;
+    }
+
+    .main-headline{
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.028em;
+    }
+
+    .main-news p{
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: -0.068em;
+        color: #CD150B;
+    }
+
+    .main-news .reports, .sport-news a, .entertainment a{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main-news .reports img,
+    .sport-news .reports img,
+    .entertainment .reports img{
+        width: 120px;
+        border-radius: 6px;
+    }
+    
+    .highlight .reports .title,
+    .sport-news .reports .title,
+    .entertainment .reports .title{
+        width: 210px;
+        margin-left: 10px;
+    }
+
+    .main-news .reports .title,
+    .sport-news .reports .title,
+    .entertainment .reports .title{
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: -0.045em;
+    }
+
+    .main-news .reports .info,
+    .sport-news .reports .info,
+    .entertainment .reports .info{
+        width: 100%;
+        margin-top: 10px;
+
+        font-weight: normal;
+        font-size: 15.5px;
+        line-height: 19px;
+        letter-spacing: -0.048em;
+    }
+
+    .general-news .title, .general-news .info{
+        color: #CD150B;
+    }
+    .sport-news .title, .sport-news .info{
+        color: #06AA48;
+    }
+    .entertainment .title, .entertainment .info{
+        color: #FF8203;
+    }
+
+    .separator{
+        width: 100%;
+        height: 1px;
+        margin: 20px 0;
+        background-color: #F5F6F7;
+    }
 }
